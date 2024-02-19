@@ -4,7 +4,7 @@ import { MdDeleteForever } from "react-icons/md";
 import { GoSignOut } from "react-icons/go";
 import { useAuth } from "@/firebase/auth";
 import { useRouter } from "next/router";
-import Loader from "@/components/Loader";
+import Loader from "../components/loader";
 import {
     collection,
     addDoc,
@@ -117,7 +117,7 @@ export default function Home() {
     };
 
     return !authUser ? (
-        <Loader />
+        <Loader/>
     ) : (
         <main className="">
             <div

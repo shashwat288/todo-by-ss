@@ -10,7 +10,8 @@ import {
 import { useRouter } from "next/router";
 import { useAuth } from "@/firebase/auth";
 import Link from "next/link";
-import Loader from "@/components/Loader";
+// import Loader from "@/components/Loader";
+import Loader from "../components/loader";
 
 const Provider = new GoogleAuthProvider();
 
